@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict History</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#3E3E3E] text-white">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-12 py-6 bg-[#3E3E3E] shadow-lg"
+    >
+      <a href="dashboard.html">
+        <img src="img/back.png" alt="B" class="h-15" />
+      </a>
+      <a href="#">
+        <img src="img/iconProfile.png" alt="Profile" class="h-15" />
+      </a>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow px-12 py-6 text-white mx-auto">
+      <div
+        class="bg-[#2F2F2F] text-white p-6 rounded-lg shadow-lg text-center mb-6"
+      >
+        <h2 class="text-3xl font-bold">Predict History</h2>
+      </div>
+      <div class="flex gap-8">
+        <!-- Left: Table -->
+        <div class="flex-1 overflow-x-aut text-3xl">
+          <table class="w-full table-auto border-spacing-y-10">
+            <tbody class="border-b">
+              <tr class="border-b">
+                <td class="px-3 py-6">1</td>
+                <td class="px-3 py-6">01 March 2025</td>
+                <td class="px-3 py-6 text-left">Severity: Critical.5</td>
+              </tr>
+              <tr class="border-b">
+                <td class="px-3 py-6">2</td>
+                <td class="px-3 py-6">28 February 2025</td>
+                <td class="px-3 py-6 text-left">Severity: Minor.20</td>
+              </tr>
+              <tr class="border-b">
+                <td class="px-3 py-6">3</td>
+                <td class="px-3 py-6">27 February 2025</td>
+                <td class="px-3 py-6 text-left">Severity: Mayor.10</td>
+              </tr>
+              <tr class="border-b">
+                <td class="px-3 py-6">4</td>
+                <td class="px-3 py-6">26 February 2025</td>
+                <td class="px-3 py-6 text-left">Severity: Warning.15</td>
+              </tr>
+              <tr class="border-b">
+                <td class="px-3 py-6">5</td>
+                <td class="px-3 py-6">25 February 2025</td>
+                <td class="px-3 py-6 text-left">Severity: Mayor.13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right Panel -->
+        <div
+          class="w-[30%] bg-[#007C91] rounded-lg p-6 flex flex-col items-center space-y-4"
+        >
+          <button
+            class="bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold py-2 px-4 rounded shadow-md w-full"
+          >
+            Delete all history
+          </button>
+          <button
+            class="bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold py-2 px-4 rounded shadow-md w-full"
+          >
+            Export History
+          </button>
+          <div class="border border-white rounded-lg w-full h-64 mt-4"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

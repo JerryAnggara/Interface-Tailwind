@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict History</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#3E3E3E] text-white">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-12 py-6 bg-[#3E3E3E] shadow-lg"
+    >
+      <a href="dashboard.html">
+        <img src="img/back.png" alt="B" class="h-15" />
+      </a>
+      <a href="#">
+        <img src="img/iconProfile.png" alt="Profile" class="h-15" />
+      </a>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow px-12 py-6 text-white mx-auto">
+      <div
+        class="bg-[#2F2F2F] text-white p-6 rounded-lg shadow-lg text-center mb-6"
+      >
+        <h2 class="text-4xl font-bold">Predict Result</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Severity Card -->
+        <div class="bg-[#2F2F2F] p-6 rounded-xl shadow text-center">
+          <h2 class="text-xl font-semibold mb-4">Severity</h2>
+          <div class="relative w-32 h-32 mx-auto">
+            <svg
+              class="absolute top-0 left-0"
+              width="128"
+              height="128"
+              viewBox="0 0 36 36"
+            >
+              <path
+                fill="none"
+                stroke="#FDBA74"
+                stroke-width="3"
+                stroke-dasharray="20, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div
+              class="flex items-center justify-center h-full text-4xl font-bold"
+            >
+              2
+            </div>
+          </div>
+          <p class="mt-4">Result of severity is</p>
+          <p class="text-2xl font-bold text-white">Minor</p>
+        </div>
+
+        <!-- Location Card -->
+        <div class="bg-[#2F2F2F] p-6 rounded-xl shadow text-center">
+          <h2 class="text-xl font-semibold mb-4">Location</h2>
+          <div
+            class="w-full h-40 rounded overflow-hidden flex items-center justify-center"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Sulawesi_Utara_districts_map.png"
+              alt="Map"
+              class="object-cover h-full"
+            />
+          </div>
+          <p class="mt-4 text-2xl font-bold">Manado</p>
+        </div>
+
+        <!-- Alarm ID Card -->
+        <div class="bg-[#2F2F2F] p-6 rounded-xl shadow text-center">
+          <h2 class="text-xl font-semibold mb-4">Alarm ID</h2>
+          <p class="text-5xl font-bold mb-2">20</p>
+          <p class="text-lg font-medium">Relay Alarm Minor</p>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#00879E] to-[#005B6B] text-white p-6 rounded-lg shadow-lg text-center mt-6"
+      >
+        <h2 class="text-4xl font-bold">Date: 01 APRIL 2025</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    </main>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          filter: invert(1);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#3E3E3E] text-white">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-12 py-6 bg-[#3E3E3E] shadow-lg"
+    >
+      <a href="dashboard.html">
+        <img src="img/logo.png" alt="OptixMS Logo" class="h-15" />
+      </a>
+      <a href="#">
+        <img src="img/iconProfile.png" alt="Profile" class="h-15" />
+      </a>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="px-12 py-6 grid grid-cols-[3fr_5fr_3fr] gap-8 items-stretch">
+      <!-- Left Column -->
+      <div class="space-y-6 h-full flex flex-col">
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center hover:bg-[#3A3A3A] transition h-85 flex flex-col justify-between"
+        >
+          <a href="temperaturPage.html" class="block">
+            <h2 class="font-semibold text-xl">Site Temperature</h2>
+            <div class="flex justify-center mt-4">
+              <img
+                src="img/temperatur.png"
+                alt="Temperature Icon"
+                class="h-50 w-auto object-contain"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center hover:bg-[#3A3A3A] transition h-85 flex flex-col justify-between"
+        >
+          <a href="devicePage.html" class="block">
+            <h2 class="font-semibold text-xl">Site Device</h2>
+            <div class="flex justify-center mt-4">
+              <img
+                src="img/device.png"
+                alt="Device Icon"
+                class="h-50 w-auto object-contain"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="space-y-4 h-full flex flex-col">
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center text-2xl font-semibold"
+        >
+          Welcome, user! 👋
+        </div>
+
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center hover:bg-[#3A3A3A] transition"
+        >
+          <a href="mapPage.html" class="block">
+            <h2 class="font-semibold text-xl">Map of Site</h2>
+            <img
+              src="img/mapDashboard.png"
+              alt="Map"
+              class="mt-4 rounded-lg w-full object-cover"
+            />
+          </a>
+        </div>
+
+        <div
+          class="bg-gradient-to-r from-[#00697C] to-[#FFAB5B] p-4 rounded-lg shadow-md text-center"
+        >
+          <div class="mb-4 w-[25%] mx-auto">
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="bg-[#2F2F2F] text-white rounded-md px-4 py-2 w-full"
+            />
+          </div>
+          <a href="predictPage.html">
+            <button
+              class="bg-[#2F2F2F] px-6 py-3 rounded-lg shadow-md text-white font-bold text-3xl"
+            >
+              Predict Now
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-6 h-full flex flex-col">
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center hover:bg-[#3A3A3A] transition h-85 flex flex-col justify-between"
+        >
+          <a href="aboutPage.html" class="block">
+            <h2 class="font-semibold text-xl">About Palapa Ring</h2>
+            <div class="flex justify-center mt-4">
+              <img
+                src="img/aboutLogo.png"
+                alt="About Logo"
+                class="h-50 w-auto object-contain"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="bg-[#2F2F2F] p-6 rounded-lg shadow-md text-center hover:bg-[#3A3A3A] transition h-85 flex flex-col justify-between"
+        >
+          <a href="historyPage.html" class="block">
+            <h2 class="font-semibold text-xl">History</h2>
+            <div class="flex justify-center mt-4">
+              <img
+                src="img/history.png"
+                alt="History Icon"
+                class="h-50 w-auto object-contain"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

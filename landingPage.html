@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptixMS - About The Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <div class="relative min-h-screen w-full">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="img/landingPage.png"
+          alt="Background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+
+      <!-- Navbar -->
+      <nav
+        class="absolute top-0 left-0 w-full px-4 sm:px-6 md:px-10 py-4 md:py-6 flex flex-col sm:flex-row justify-between items-center z-10 gap-4 sm:gap-0"
+      >
+        <img src="img/logo.png" alt="OptixMS Logo" class="h-12 md:h-16" />
+
+        <div class="flex space-x-2">
+          <button
+            class="backdrop-blur-md bg-white bg-opacity-10 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg hover:bg-opacity-20 transition"
+            onclick="window.location.href='signUpPage.html'"
+          >
+            Sign Up
+          </button>
+          <button
+            class="backdrop-blur-md bg-white bg-opacity-10 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg hover:bg-opacity-20 transition"
+            onclick="window.location.href='loginPage.html'"
+          >
+            Login
+          </button>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-start p-6 sm:p-10 md:p-16 max-w-full md:max-w-3xl z-10 mt-20 sm:mt-0"
+      >
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-tight"
+        >
+          About <br class="hidden sm:block" />
+          The Project
+        </h2>
+        <p class="mt-4 md:mt-6 text-base sm:text-xl md:text-2xl">
+          Our project focuses on developing a predictive maintenance system for
+          optical networks using machine learning. By analyzing key network
+          parameters, our system can detect potential failures before they
+          occur, reducing downtime and improving overall network reliability.
+          This solution enables proactive maintenance, ensuring optimal
+          performance and efficiency for high-speed optical communication
+          systems.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

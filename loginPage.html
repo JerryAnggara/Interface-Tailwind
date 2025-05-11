@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#00879E] to-[#005B6B] text-white"
+  >
+    <div class="relative flex flex-col md:flex-row items-center">
+      <!-- Illustration -->
+      <div
+        class="relative w-[450px] h-[450px] bg-gradient-to-b from-[#00879E] to-[#005B6B] rounded-xl shadow-lg flex items-center justify-center p-6"
+      >
+        <img src="img/signUpLogin.png" alt="Illustration" />
+      </div>
+
+      <!-- Login Form -->
+      <div
+        class="w-96 bg-white bg-opacity-10 p-8 rounded-xl rounded-bl-none rounded-tl-none shadow-lg backdrop-blur-lg border-t-2 border-r-2 border-b-2 border-l-0 border-white"
+      >
+        <h2 class="text-2xl font-semibold text-center mb-6">Login</h2>
+        <form>
+          <label class="block mb-1 text-sm font-medium">Username</label>
+          <input
+            type="text"
+            class="w-full p-2 mb-3 border-b border-white bg-transparent outline-none text-white"
+          />
+
+          <label class="block mb-1 text-sm font-medium">Password</label>
+          <input
+            type="password"
+            class="w-full p-2 mb-5 border-b border-white bg-transparent outline-none text-white"
+          />
+          <!-- Ubah button form for BackEnd -->
+          <a href="dashboard.html">
+            <button
+              type="button"
+              class="w-full p-3 rounded-lg bg-gradient-to-b from-[#00879E] to-[#005B6B] shadow-md hover:bg-opacity-80"
+            >
+              Login
+            </button>
+          </a>
+        </form>
+        <div class="flex justify-between text-sm mt-4">
+          <a href="signUpPage.html" class="font-semibold underline"
+            >Create an account</a
+          >
+          <a href="#" class="font-semibold underline">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#996737] to-[#FFAB5B] text-white"
+  >
+    <div class="relative flex flex-col md:flex-row items-center">
+      <!-- Sign Up Form -->
+      <div
+        class="w-96 bg-white bg-opacity-10 px-8 py-6 rounded-xl rounded-br-none rounded-tr-none shadow-lg backdrop-blur-lg border-t-2 border-r-0 border-b-2 border-l-2 border-white"
+      >
+        <h2 class="text-2xl font-semibold text-center mb-6">Sign Up</h2>
+        <form>
+          <label class="block mb-1 text-sm font-medium">Username</label>
+          <input
+            type="text"
+            class="w-full mb-3 border-b border-white bg-transparent outline-none text-white"
+          />
+
+          <label class="block mb-1 text-sm font-medium">Email</label>
+          <input
+            type="email"
+            class="w-full mb-3 border-b border-white bg-transparent outline-none text-white"
+          />
+
+          <label class="block mb-1 text-sm font-medium">Password</label>
+          <input
+            type="password"
+            class="w-full mb-5 border-b border-white bg-transparent outline-none text-white"
+          />
+
+          <button
+            class="w-full p-3 rounded-lg bg-gradient-to-b from-[#FFAB5B] to-[#996737] hover:opacity-80"
+          >
+            Register
+          </button>
+        </form>
+        <p class="text-center mt-4 text-sm">
+          Already have an account?
+          <a href="loginPage.html" class="font-semibold underline">Log in</a>
+        </p>
+      </div>
+
+      <!-- Illustration -->
+      <div
+        class="relative w-[450px] h-[450px] bg-gradient-to-b from-[#FFAB5B] to-[#996737] rounded-xl shadow-lg flex items-center justify-center p-6"
+      >
+        <img src="img/signUpLogin.png" alt="Illustration" />
+      </div>
+    </div>
+  </body>
+</html>
